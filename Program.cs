@@ -6,6 +6,7 @@ using revision;
 namespace Revision{
     class Program(){
         static void Main(string[] args){
+            Console.Write("Enter the number of the module you want to run: ");
             int choice = int.Parse(Console.ReadLine());
             switch(choice){
                 case 1:
@@ -16,6 +17,9 @@ namespace Revision{
                     break;
                 case 3:
                     Conversion.run();
+                    break;
+                case 4:
+                    Ternary.run();
                     break;
                 default:
                     Console.WriteLine("{0} not available.",choice);
