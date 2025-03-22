@@ -14,6 +14,9 @@ namespace Revision{
                 case 2:
                     DataTypes.run();
                     break;
+                case 3:
+                    Conversion.run();
+                    break;
                 default:
                     Console.WriteLine("{0} not available.",choice);
                     break;
