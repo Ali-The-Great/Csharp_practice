@@ -11,6 +11,9 @@ namespace Revision{
                 case 1:
                     HelloWorld.run();
                     break;
+                case 2:
+                    DataTypes.run();
+                    break;
                 default:
                     Console.WriteLine("{0} not available.",choice);
                     break;
