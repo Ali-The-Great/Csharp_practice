@@ -27,6 +27,9 @@ namespace Revision{
                 case 6:
                     ConversionFail.run();
                     break;
+                case 7:
+                    FizzBuzz.run();
+                    break;
                 default:
                     Console.WriteLine("{0} not available.",choice);
                     break;
