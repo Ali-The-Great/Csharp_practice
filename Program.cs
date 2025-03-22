@@ -1,2 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+using System.Collections;
+using System.Diagnostics;
+using revision;
+
+namespace Revision{
+    class Program(){
+        static void Main(string[] args){
+            int choice = int.Parse(Console.ReadLine());
+            switch(choice){
+                case 1:
+                    HelloWorld.run();
+                    break;
+                default:
+                    Console.WriteLine("{0} not available.",choice);
+                    break;
+            }
+        }
+    }
+}
