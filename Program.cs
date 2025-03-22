@@ -21,6 +21,9 @@ namespace Revision{
                 case 4:
                     Ternary.run();
                     break;
+                case 5:
+                    Formatting.run();
+                    break;
                 default:
                     Console.WriteLine("{0} not available.",choice);
                     break;
