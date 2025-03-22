@@ -24,6 +24,9 @@ namespace Revision{
                 case 5:
                     Formatting.run();
                     break;
+                case 6:
+                    ConversionFail.run();
+                    break;
                 default:
                     Console.WriteLine("{0} not available.",choice);
                     break;
