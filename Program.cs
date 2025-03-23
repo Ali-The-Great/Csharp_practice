@@ -30,6 +30,9 @@ namespace Revision{
                 case 7:
                     FizzBuzz.run();
                     break;
+                case 8:
+                    Verbatim.run();
+                    break;
                 default:
                     Console.WriteLine("{0} not available.",choice);
                     break;
