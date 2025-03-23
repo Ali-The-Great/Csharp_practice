@@ -2,7 +2,7 @@
 
 public class DataTypes
 {
-    public static void run()
+    public static void Run()
     {
         // signed short (16-bit signed integer)
         //short signedShort = 5; // Assigned as a regular integer

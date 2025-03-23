@@ -2,12 +2,12 @@
 
 public class ConversionFail
 {
-    public static void run(){
+    public static void Run(){
         bool success = false;
         while (!success)
         {
             Console.Write("Enter a number: ");
-            string numInput = Console.ReadLine();
+            string? numInput = Console.ReadLine();
 
             if (int.TryParse(numInput, out int num))
             {

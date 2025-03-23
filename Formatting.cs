@@ -4,7 +4,7 @@ namespace revision;
 
 public class Formatting
 {
-    public static void run(){
+    public static void Run(){
         double value = 81.0309;
         Console.WriteLine(value);
         Console.WriteLine("{0:0.000}",value);

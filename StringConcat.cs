@@ -5,7 +5,7 @@ namespace revision;
 
 public class StringConcat
 {
-    public static void run(){
+    public static void Run(){
         String name = "john";
         int age = 25;
         Console.WriteLine("My name is " + name + " , I am " + age + " years old");  //String Concatenation

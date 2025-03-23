@@ -2,7 +2,7 @@
 
 public class FizzBuzz
 {
-    public static void run(){
+    public static void Run(){
         for (int i = 1; i <= 20; i++)
         {
             String Message = "";

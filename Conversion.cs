@@ -2,7 +2,7 @@
 
 public class Conversion
 {
-    public static void run(){
+    public static void Run(){
         string s = "235";
         string s2 = "true";
         int i = Convert.ToInt32(s);
