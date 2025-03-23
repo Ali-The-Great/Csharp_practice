@@ -36,6 +36,9 @@ namespace Revision{
                 case 9:
                     StringConcat.run();
                     break;
+                case 10:
+                    EmptyStringCompare.run();
+                    break;
                 default:
                     Console.WriteLine("{0} not available.",choice);
                     break;
