@@ -41,6 +41,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 11:
             StringLooping.Run();
             break;
+        case 12:
+            PrintInReverse.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
