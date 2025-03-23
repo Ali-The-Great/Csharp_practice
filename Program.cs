@@ -50,6 +50,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 14:
             ArrayIntro.Run();
             break;
+        case 15:
+            ListIntro.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
