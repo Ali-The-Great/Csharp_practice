@@ -44,6 +44,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 12:
             PrintInReverse.Run();
             break;
+        case 13:
+            PasswordChecker.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
