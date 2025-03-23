@@ -39,6 +39,9 @@ namespace Revision{
                 case 10:
                     EmptyStringCompare.run();
                     break;
+                case 11:
+                    StringLooping.run();
+                    break;
                 default:
                     Console.WriteLine("{0} not available.",choice);
                     break;

@@ -9,7 +9,7 @@ public class EmptyStringCompare
         String Greeting = "Hello";
         Char[] chars = new char[] {'H','e','l','l','o'};
         Object greeting = new String((chars));
-        Console.WriteLine(greeting == Greeting); // Comparing string object to object => diffrent because of their memory
-        Console.WriteLine(Greeting.Equals(greeting)); // Equals only compares the value
+        Console.WriteLine(greeting == Greeting); // Greeting is a String object while greeting is an obj ,both Greeting and greeting are references, but they refer to different objects in memory.
+        Console.WriteLine(Greeting.Equals(greeting)); // Equals only compares the value.
     }
 }
