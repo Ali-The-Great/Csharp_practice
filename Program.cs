@@ -33,6 +33,9 @@ namespace Revision{
                 case 8:
                     Verbatim.run();
                     break;
+                case 9:
+                    StringConcat.run();
+                    break;
                 default:
                     Console.WriteLine("{0} not available.",choice);
                     break;
