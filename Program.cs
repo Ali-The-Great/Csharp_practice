@@ -59,6 +59,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 17:
             EvenOddSplit.Run();
             break;
+        case 18:
+            MultipleArray.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
