@@ -56,6 +56,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 16:
             Dictintro.Run();
             break;
+        case 17:
+            EvenOddSplit.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
