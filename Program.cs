@@ -53,6 +53,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 15:
             ListIntro.Run();
             break;
+        case 16:
+            Dictintro.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
