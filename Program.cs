@@ -65,6 +65,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 19:
             OptionalParameters.Run();
             break;
+        case 20:
+            PassByRef.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
