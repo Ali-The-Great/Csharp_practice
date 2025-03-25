@@ -3,14 +3,12 @@
 public class MultipleArray
 {
     public static void Run(){
-    
-    int num,length;
-    
-    System.Console.Write("Enter The Num: ");
-    if (!int.TryParse(Console.ReadLine(), out num)) num = 1;
+
+        System.Console.Write("Enter The Num: ");
+        if (!int.TryParse(Console.ReadLine(), out int num)) num = 1;
     
     System.Console.Write("Enter The Length: ");
-    if (!int.TryParse(Console.ReadLine(), out length)) length = 1;
+    if (!int.TryParse(Console.ReadLine(), out int length)) length = 1;
     
     int[] arr = new int[length];
     

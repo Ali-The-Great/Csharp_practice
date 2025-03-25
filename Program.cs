@@ -62,6 +62,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 18:
             MultipleArray.Run();
             break;
+        case 19:
+            OptionalParameters.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
