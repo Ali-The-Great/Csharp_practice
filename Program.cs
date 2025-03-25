@@ -68,6 +68,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 20:
             PassByRef.Run();
             break;
+        case 21:
+            AreaTriangle.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
