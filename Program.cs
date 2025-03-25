@@ -71,6 +71,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 21:
             AreaTriangle.Run();
             break;
+        case 22:
+            ArrayIntSum.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
