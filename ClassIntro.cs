@@ -15,37 +15,31 @@ public class ClassIntro
 }
 
 public class Person{
-    private readonly string name;
-    private readonly int age;
+    public string Name { get;}
+    public int Age { get;}
     public Person(string name, int age){
-        this.name = name;
-        this.age=age;
+        this.Name = name;
+        this.Age=age;
     }
 
     public Person(){
-        this.name = string.Empty;
-        this.age = 0;
-    }
-    public string GetName(){
-        return name;
-    }
-    public int GetAge(){
-        return age;
+        this.Name = string.Empty;
+        this.Age = 0;
     }
 
     public override string ToString()
     {
-        return name + ", " + age +" years old.";
+        return Name + ", " + Age +" years old.";
     }
 
     public override bool Equals(object? obj)
     {
-        if (obj is Person p) return p.name == this.name && p.age == this.age;
+        if (obj is Person p) return p.Name == this.Name && p.Age == this.Age;
         return false;
     }
 
     public override int GetHashCode()
     {
-        return HashCode.Combine(this.name, this.age);
+        return HashCode.Combine(this.Name, this.Age);
     }
 }
