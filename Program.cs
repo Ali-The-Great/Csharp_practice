@@ -89,6 +89,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 27:
             StackIntro.Run();
             break;
+        case 28:
+            QueueIntro.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
