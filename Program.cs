@@ -74,6 +74,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 22:
             ArrayIntSum.Run();
             break;
+        case 23:
+            ExceptionHandling.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
