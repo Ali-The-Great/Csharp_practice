@@ -92,6 +92,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 28:
             QueueIntro.Run();
             break;
+        case 29:
+            RandomStuff.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
