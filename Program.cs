@@ -86,6 +86,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 26:
             OpeOverload.Run();
             break;
+        case 27:
+            StackIntro.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
