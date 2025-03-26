@@ -19,7 +19,7 @@ public class Person{
     public int Age { get;}
     public Person(string name, int age){
         this.Name = name;
-        this.Age=age;
+        this.Age = age;
     }
 
     public Person(){
