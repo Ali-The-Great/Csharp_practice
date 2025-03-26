@@ -77,6 +77,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 23:
             ExceptionHandling.Run();
             break;
+        case 24:
+            ClassIntro.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
