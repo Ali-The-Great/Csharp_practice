@@ -95,6 +95,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 29:
             RandomStuff.Run();
             break;
+        case 30:
+            await AwaitForeach.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
