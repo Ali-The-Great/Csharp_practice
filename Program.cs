@@ -98,6 +98,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 30:
             await AwaitForeach.Run();
             break;
+        case 31:
+            ConstructorsIntro.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
