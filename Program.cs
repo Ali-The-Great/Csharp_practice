@@ -101,6 +101,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 31:
             ConstructorsIntro.Run();
             break;
+        case 32:
+            InheritenceIntro.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
