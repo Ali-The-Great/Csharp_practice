@@ -116,6 +116,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 36:
             StructExample.Run();
             break;
+        case 37:
+            EnumExample.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
