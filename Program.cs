@@ -110,6 +110,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 34:
             MultipleInheritance.Run();
             break;
+        case 35:
+            OtherClassTypes.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
