@@ -113,6 +113,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 35:
             OtherClassTypes.Run();
             break;
+        case 36:
+            StructExample.Run();
+            break;
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
