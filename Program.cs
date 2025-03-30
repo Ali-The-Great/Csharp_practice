@@ -128,6 +128,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         //Part 2:
         //------
 
+        case 38:
+            DelegatesExample.Run();
+            break;
 
         default:
             Console.WriteLine("{0} not available.", choice);
