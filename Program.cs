@@ -8,6 +8,10 @@ int choice;
 if (int.TryParse(Console.ReadLine(), out choice)){
     switch (choice)
     {
+        //-------
+        //Part 1:
+        //-------
+
         case 1:
             HelloWorld.Run();
             break;
@@ -119,6 +123,12 @@ if (int.TryParse(Console.ReadLine(), out choice)){
         case 37:
             EnumExample.Run();
             break;
+
+        //-------
+        //Part 2:
+        //------
+
+
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
