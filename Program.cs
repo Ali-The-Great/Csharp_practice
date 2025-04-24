@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Diagnostics;
-using revision;
+﻿using revision;
 
 Console.Write("Enter the number of the module you want to run: ");
-int choice;
-if (int.TryParse(Console.ReadLine(), out choice)){
+if (int.TryParse(Console.ReadLine(), out var choice)){
     switch (choice)
     {
         //-------
@@ -134,6 +130,9 @@ if (int.TryParse(Console.ReadLine(), out choice)){
 
         case 39:
             CalculatorDelegate.Run();
+            break;
+        case 40:
+            DelegatesAndEvents.Run();
             break;
 
         default:
