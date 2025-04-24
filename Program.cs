@@ -132,6 +132,10 @@ if (int.TryParse(Console.ReadLine(), out choice)){
             DelegatesExample.Run();
             break;
 
+        case 39:
+            CalculatorDelegate.Run();
+            break;
+
         default:
             Console.WriteLine("{0} not available.", choice);
             break;
