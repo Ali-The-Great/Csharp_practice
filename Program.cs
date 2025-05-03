@@ -131,8 +131,13 @@ if (int.TryParse(Console.ReadLine(), out var choice)){
         case 39:
             CalculatorDelegate.Run();
             break;
+        
         case 40:
             DelegatesAndEvents.Run();
+            break;
+        
+        case 41:
+            LinqEx1.Run();
             break;
 
         default:
