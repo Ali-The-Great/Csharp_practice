@@ -139,6 +139,10 @@ if (int.TryParse(Console.ReadLine(), out var choice)){
         case 41:
             LinqEx1.Run();
             break;
+        
+        case 42:
+            LinqSqlexExercises.Run();
+            break;
 
         default:
             Console.WriteLine("{0} not available.", choice);

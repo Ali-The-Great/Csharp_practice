@@ -1,0 +1,162 @@
+
+using revision.Data;
+
+namespace revision;
+
+public static class LinqSqlexExercises
+{
+    public static void Run()
+    {
+        Console.Write("Enter the number of the exercise you want to run: ");
+        if (int.TryParse(Console.ReadLine(), out var choice))
+        {
+            switch (choice)
+            {
+                case 1:
+                    Ex1();
+                    break;
+                case 2:
+                    Ex2();
+                    break;
+                case 3:
+                    Ex3();
+                    break;
+                case 4:
+                    Ex4();
+                    break;
+                case 5:
+                    Ex5();
+                    break;
+                case 6:
+                    Ex6();
+                    break;
+                case 7:
+                    Ex7();
+                    break;
+                case 8:
+                    Ex8();
+                    break;
+                case 9:
+                    Ex9();
+                    break;
+                case 10:
+                    Ex10();
+                    break;
+                case 11:
+                    Ex11();
+                    break;
+                default:
+                    Console.WriteLine("{0} not available.", choice);
+                    break;
+            }
+        }
+        else
+        {
+            Console.WriteLine("Invalid input. Please enter a valid integer.");
+        }
+    }
+
+    private static void Ex1()
+    {
+        using var context = new AppDbContext();
+        var e = context.Salesmen.Take(5);
+        foreach (var v in e)
+        {
+            Console.WriteLine($"{v.SalesmanId} - {v.Name} - {v.City} - {v.Commission}");
+        }
+    }
+    private static void Ex2()
+    {
+        using var context = new AppDbContext();
+        var e = context.Salesmen.Select(s=> new {s.Name,s.Commission});
+        foreach (var v in e)
+        {
+            Console.WriteLine($"{v.Name} - {v.Commission}");
+        }
+    }
+    private static void Ex3()
+    {
+        using var context = new AppDbContext();
+        var e = context.Orders.Select(o => new {o.OrdDate,o.SalesmanId,o.OrdNo,o.PurchAmt});
+        foreach (var v in e)
+        {
+            Console.WriteLine($"{v.OrdDate} - {v.SalesmanId} - {v.OrdNo} - {v.PurchAmt}");
+        }
+    }
+    private static void Ex4()
+    {
+        using var context = new AppDbContext();
+        var e = context.Orders.Select(o => o.SalesmanId).Distinct().OrderBy(salesmanId => salesmanId);
+        foreach (var v in e)
+        {
+            Console.WriteLine(v);
+        }
+    }
+    private static void Ex5()
+    {
+        using var context = new AppDbContext();
+        var e = context.Salesmen.Where(s => s.City == "Paris").Select(s => new { s.SalesmanId, s.City });
+        foreach (var v in e)
+        {
+            Console.WriteLine($"{v.SalesmanId} - {v.City}");
+        }
+    }
+    private static void Ex6()
+    {
+        using var context = new AppDbContext();
+        var e = context.Customers.Where(c => c.Grade == 200)
+            .Select(c => new { c.CustomerId, c.CustName, c.Grade, c.SalesmanId });
+        foreach (var v in e)
+        {
+            Console.WriteLine($"{v.CustomerId} - {v.CustName} - {v.Grade} - {v.SalesmanId}");
+        }
+    }
+    private static void Ex7()
+    {
+        using var context = new AppDbContext();
+        var e = context.Orders.Where(o => o.SalesmanId == 5001).Select(o => new { o.OrdNo, o.OrdDate, o.PurchAmt });
+        foreach (var v in e)
+        {
+            Console.WriteLine($"{v.OrdNo} - {v.OrdDate} - {v.PurchAmt}");
+        }
+    }
+    private static void Ex8()
+    {
+        using var context = new AppDbContext();
+        var e = context.NobelWins.Where(n => n.Year == 1970).Select(n => new { n.Year, n.Subject, n.Winner });
+        foreach (var v in e)
+        {
+            Console.WriteLine($"{v.Year} - {v.Subject} - {v.Winner}");
+        }
+    }
+    private static void Ex9()
+    {
+        using var context = new AppDbContext();
+        var e = context.NobelWins.Where(n => n.Year > 1950 && n.Subject == "Physics").Select(n => n.Winner);
+        foreach (var v in e)
+        {
+            Console.WriteLine(v);
+        }
+    }
+    private static void Ex10()
+    {
+        using var context = new AppDbContext();
+        var e = context.NobelWins.Where(n=> n.Winner != null && n.Winner.StartsWith("Louis") )
+            .Select(n=> new { n.Year, n.Subject, n.Winner ,n.Country,n.Category});
+        foreach (var v in e)
+        {
+            Console.WriteLine($"{v.Year} - {v.Subject} - {v.Winner} - {v.Country} - {v.Category}");
+        }
+    }
+    private static void Ex11()
+    {
+        using var context = new AppDbContext();
+        var e = context.NobelWins.Where(n => n.Subject != null && !n.Subject.StartsWith("P"))
+            .Select(n => new { n.Year, n.Subject, n.Winner, n.Country, n.Category })
+            .OrderByDescending(n => n.Year).ThenBy(n => n.Winner);
+        foreach (var v in e)
+        {
+            Console.WriteLine($"{v.Year} - {v.Subject} - {v.Winner} - {v.Country} - {v.Category}");
+        }
+    }
+}

@@ -16,7 +16,7 @@ public interface IStudent
     public void GreetStudent();
 }
 
-public class Student(int num, string name) : IStudent
+file class Student(int num, string name) : IStudent
 {
     public int StudentNum { get; set; } = num;
     public string? StudentName { get; set; } = name;
